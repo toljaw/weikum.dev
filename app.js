@@ -3,11 +3,12 @@ const fs = require('fs');
 const path = require('path');
 
 http.createServer(function(req, res) {
-	const filePath = path.join(__dirname, 'index.html');
+	let filePath = path.join(__dirname, 'public', req.url === '/' ? 'index.html' : req.url);
+
 	fs.readFile(filePath, function(err, data) {
 		if (err) {
-			res.writeHead(500, {'Content-Type': 'text/plain'});
-			res.write('Internal Server Error');
+			res.writeHead(404, {'Content-Type': 'text/plain'});
+			res.write('404 Not Found');
 			res.end();
 		} else {
 			res.writeHead(200, {'Content-Type': 'text/html'});
