@@ -5,16 +5,18 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>weikum.dev</title>
+    <title>weikum</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <a href="./index.html">Home</a>
-            <a href="./indexCoffeeShop.html">Coffee Shop</a>
-            <a href="./about.html">About</a>
-        </ul>
-    </nav>
+<div id="navbar"></div>
+<h1>Welcom to my Home Page</h1>
+<script>
+    fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('navbar').innerHTML = data;
+        });
+</script>
 </body>
 </html>
