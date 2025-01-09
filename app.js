@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 
 http.createServer(function(req, res) {
-    let filePath = path.join(__dirname, 'public', req.url === '/' ? 'index.html' : req.url);
+    let filePath = path.join(__dirname, 'public', req.url === '/' ? 'indexCoffeeShop.html' : req.url);
     let extname = String(path.extname(filePath)).toLowerCase();
     let mimeTypes = {
         '.html': 'text/html',
