@@ -10,7 +10,19 @@
 </head>
 <body>
 <div id="navbar"></div>
-<h1>Welcome to my Home Page</h1>
+<section id="intro">
+    <p class="name">Hi my name is <span>Anatoli Weikum.</span></p>
+    <h2>I create the web.</h2>
+    <p>I'm a student specializing in backend development and devops.</p>
+    <p>Currently, I'm completing my "Umschulung" in<a href="https://www.comcave.de/umschulung/it-programmierung-systeme/fachinformatik/fachinformatiker-anwendungsentwicklung-ihk">Comcave College</a>, making a career switch from Marketing Management to Software Development.</p>
+</section>
+
+<section id="contact">
+    <h3>Contact me</h3>
+    <p>I'm always interested in hearing about [state what it is you'd like to get emails and contacted about].</p>
+    <a href="https://www.google.de">Email me</a>
+</section>
+
 <script>
     fetch('navbar.html')
         .then(response => response.text())
