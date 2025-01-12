@@ -28,7 +28,7 @@ html {
 body {
     padding: 0;
     margin: 0;
-    font-family: var(--sans), serif;
+    font-family: var(--sans);
     background-color: var(--black);
     color: var(--white);
     font-size: var(--font-size);
@@ -54,16 +54,17 @@ a:hover {
 }
 #intro .name {
     font-family: var(--mono);
+    font-size: 1rem;
 }
 .name span {
     font-family: var(--sans);
     font-size: 4rem;
     color: var(--aqua);
     display: block;
+    font-weight: 300;
 }
 #intro h2 {
     font-size: 4rem;
-    font-weight: normal;
 }
 
 /* contact section */
@@ -113,10 +114,52 @@ nav [class*="fa-"] {
     color: var(--aqua);
 }
 nav a {
-    color: var(--white);
+    color: white;
     text-decoration: none;
     display: block;
 }
-nav a:hover, nav [class*="fa-"]:hover {
+nav a:hover,
+nav [class*="fa-"]:hover {
     color: var(--magenta);
+}
+
+.button {
+    background-color: var(--magenta);
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+.button:hover {
+    color: var(--white);
+    background-color: var(--hotmag);
+}
+
+/* responsive design */
+@media (min-width: 850px) {
+    nav {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    nav li:first-child {
+        flex-basis: auto;
+        text-align: left;
+        margin-right: auto;
+    }
+}
+
+#footer div {
+    width: 400px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 3rem 0;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    color: white;
+    text-decoration: none;
+    display: block;
 }
