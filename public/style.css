@@ -65,7 +65,58 @@ a:hover {
     font-size: 4rem;
     font-weight: normal;
 }
+
+/* contact section */
 #contact {
-    padding: 3rem;
+
+
     background-color: var(--plum);
+}
+#contact div {
+    width: 400px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 3rem 0;
+}
+#contact p {
+    margin-top: 3rem;
+}
+
+/* navbar */
+nav {
+    font-family: var(--mono);
+    font-size: 80%;
+    padding: 1rem;
+}
+nav h1 a {
+    font-family: var(--sans);
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+nav li:first-child {
+    flex-basis: 100%;
+    text-align: center;
+}
+nav [class*="fa-"] {
+    font-size: 150%;
+    color: var(--aqua);
+}nav h1 [class*="fa-"] {
+    font-size: 100%;
+    color: var(--aqua);
+}
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    display: block;
+}
+nav a:hover, nav [class*="fa-"]:hover {
+    color: var(--magenta);
 }

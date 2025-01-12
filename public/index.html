@@ -14,14 +14,11 @@
     <p class="name">Hi my name is <span>Anatoli Weikum.</span></p>
     <h2>I create the web.</h2>
     <p>I'm a student specializing in backend development and devops.</p>
-    <p>Currently, I'm completing my "Umschulung" in<a href="https://www.comcave.de/umschulung/it-programmierung-systeme/fachinformatik/fachinformatiker-anwendungsentwicklung-ihk">Comcave College</a>, making a career switch from Marketing Management to Software Development.</p>
+    <p>Currently, I'm completing my "Umschulung" in <a
+            href="https://www.comcave.de/umschulung/it-programmierung-systeme/fachinformatik/fachinformatiker-anwendungsentwicklung-ihk">Comcave College</a>, making a career switch from Marketing Management to Software Development.</p>
 </section>
 
-<section id="contact">
-    <h3>Contact me</h3>
-    <p>I'm always interested in hearing about [state what it is you'd like to get emails and contacted about].</p>
-    <a href="https://www.google.de">Email me</a>
-</section>
+<div id="contact"></div>
 
 <script>
     fetch('navbar.html')
@@ -29,6 +26,12 @@
         .then(data => {
             document.getElementById('navbar').innerHTML = data;
         });
+    fetch('contact.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('contact').innerHTML = data;
+        });
 </script>
+<script src="https://kit.fontawesome.com/10fdfa505f.js" crossorigin="anonymous"></script>
 </body>
 </html>
