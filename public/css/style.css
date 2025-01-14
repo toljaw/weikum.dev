@@ -1,5 +1,17 @@
+/*
 @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oxygen+Mono&family=Oxygen:wght@300;400;700&display=swap');
+*/
+.oxygen-mono-regular {
+    font-family: "Oxygen Mono", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.oxygen-regular {
+    font-family: "Oxygen", serif;
+    font-weight: 400;
+    font-style: normal;
+}
 
 /* variables declared here - these are the colors four my pages, as well as the font stacks and sizes. */
 :root {
@@ -11,8 +23,8 @@
     --aqua: #86fbfb;
     --white: #f7f8fa;
     --font-size: 1.3rem;
-    --mono: "Oxygen mono", monospace;
-    --sans: "Oxygen", sans-serif;
+    --mono: "Oxygen Mono", serif;
+    --sans: "Oxygen", serif;
 }
 
 /* border box model: https://css-tricks.com/box-sizing/ */
@@ -28,7 +40,7 @@ html {
 body {
     padding: 0;
     margin: 0;
-    font-family: var(--sans);
+    font-family: var(--sans), serif;
     background-color: var(--black);
     color: var(--white);
     font-size: var(--font-size);
@@ -54,11 +66,11 @@ a:hover {
     line-height: 1.5;
 }
 #intro .name {
-    font-family: var(--mono);
+    font-family: var(--mono), serif;
     font-size: 1rem;
 }
 .name span {
-    font-family: var(--sans);
+    font-family: var(--sans), serif;
     font-size: 4rem;
     color: var(--aqua);
     display: block;
@@ -84,12 +96,12 @@ a:hover {
 
 /* navbar */
 #nav {
-    font-family: var(--mono);
+    font-family: var(--mono), serif;
     font-size: 80%;
     padding: 1rem;
 }
 #nav h1 a {
-    font-family: var(--sans);
+    font-family: var(--sans), serif;
 }
 #nav ul {
     list-style-type: none;
