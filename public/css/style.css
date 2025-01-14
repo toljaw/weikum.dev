@@ -47,6 +47,7 @@ a:hover {
 /* intro styles */
 #intro {
     padding-bottom: 10rem;
+    padding-left: 5rem
 }
 #intro p {
     font-size: 1rem;
@@ -69,8 +70,6 @@ a:hover {
 
 /* contact section */
 #contact {
-
-
     background-color: var(--plum);
 }
 #contact div {
@@ -84,15 +83,15 @@ a:hover {
 }
 
 /* navbar */
-nav {
+#nav {
     font-family: var(--mono);
     font-size: 80%;
     padding: 1rem;
 }
-nav h1 a {
+#nav h1 a {
     font-family: var(--sans);
 }
-nav ul {
+#nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -102,24 +101,25 @@ nav ul {
     align-items: center;
     gap: 2rem;
 }
-nav li:first-child {
+#nav li:first-child {
     flex-basis: 100%;
     text-align: center;
 }
-nav [class*="fa-"] {
+#nav [class*="fa-"] {
     font-size: 150%;
     color: var(--aqua);
-}nav h1 [class*="fa-"] {
+}
+#nav h1 [class*="fa-"] {
     font-size: 100%;
     color: var(--aqua);
 }
-nav a {
+#nav a {
     color: white;
     text-decoration: none;
     display: block;
 }
-nav a:hover,
-nav [class*="fa-"]:hover {
+#nav a:hover,
+#nav [class*="fa-"]:hover {
     color: var(--magenta);
 }
 
@@ -133,6 +133,21 @@ nav [class*="fa-"]:hover {
     background-color: var(--hotmag);
 }
 
+/* footer section*/
+footer {
+    text-align: center;
+}
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 2rem 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 3rem;
+    font-size: 3rem;
+}
+
 /* responsive design */
 @media (min-width: 850px) {
     nav {
@@ -144,22 +159,4 @@ nav [class*="fa-"]:hover {
         text-align: left;
         margin-right: auto;
     }
-}
-
-#footer div {
-    width: 400px;
-    text-align: center;
-    margin: 0 auto;
-    padding: 3rem 0;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    color: white;
-    text-decoration: none;
-    display: block;
 }

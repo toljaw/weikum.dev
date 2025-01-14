@@ -6,11 +6,41 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>weikum</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/10fdfa505f.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<div id="navbar"></div>
+<!-- <div id="navbar"></div> -->
+<section id="nav">
+    <ul>
+        <li>
+            <h1>
+                <a href="./index.html">
+                    <span class="fa-solid fa-code" aria-hidden="true"></span>
+                    <span>
+                        Anatoli Weikum
+                    </span>
+                </a>
+            </h1>
+        </li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+            <a href="https://www.linkedin.com/in/anatoli-weikum-0b0578196/" target="_blank">
+                <span class="fa-brands fa-linkedin" aria-hidden="true"></span>
+                <span class="sr-only">LinkedIn</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://github.com/toljaw" target="_blank">
+                <span class="fa-brands fa-github" aria-hidden="true"></span>
+                <span class="sr-only">Github</span>
+            </a>
+        </li>
+        <li><a href="https://www.google.de" class="button" target="_blank">Resume</a></li>
+    </ul>
+</section>
 <section id="intro">
     <p class="name">Hi my name is <span>Anatoli Weikum.</span></p>
     <h2>I create the web.</h2>
@@ -18,11 +48,39 @@
     <p>Currently, I'm completing my "Umschulung" in <a
             href="https://www.comcave.de/umschulung/it-programmierung-systeme/fachinformatik/fachinformatiker-anwendungsentwicklung-ihk">Comcave College</a>, making a career switch from Marketing Management to Software Development.</p>
 </section>
+<section id="contact">
+    <div>
+        <h2>Contact me</h2>
+        <p>I'm always interested in hearing about new project ideas and receiving feedback on existing ones.</p>
+        <p><a href="mailto:weikum.anatoli@gmail.com">Email me</a></p>
+    </div>
+</section>
+<footer>
+    <h2>Anatoli Weikum &middot; Webdeveloper</h2>
+    <ul>
+        <li>
+            <a href="https://www.linkedin.com/in/anatoli-weikum-0b0578196/" target="_blank">
+                <span class="fa-brands fa-linkedin" aria-hidden="true"></span>
+                <span class="sr-only">LinkedIn</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://github.com/toljaw" target="_blank">
+                <span class="fa-brands fa-github" aria-hidden="true"></span>
+                <span class="sr-only">Github</span>
+            </a>
+        </li>
+        <li><a href="mailto:weikum.anatoli@gmail.com">
+            <span class="fa-solid fa-envelope" aria-hidden="true"></span>
+            <span class="sr-only">Email</span>
+            </a>
+        </li>
 
-<div id="contact"></div>
-<div id="footer"></div>
+    </ul>
+    <p><small>&copy; 2025 Anatoli Weikum. All rights reserved.</small></p>
+</footer>
 
-<script>
+<!-- <script>
     fetch('navbar.html')
         .then(response => response.text())
         .then(data => {
@@ -38,6 +96,6 @@
         .then(data => {
             document.getElementById('footer').innerHTML = data;
         });
-</script>
+</script> -->
 </body>
 </html>
